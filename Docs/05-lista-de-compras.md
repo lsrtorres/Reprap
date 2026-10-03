@@ -25,10 +25,14 @@ Consolidada em 2026-10-03 após aprovação dos conceitos ([04](04-conceito-novo
 | 10 | Trilho linear **MGN9 × 300 mm com carrinho** | padrão (ex.: MGN9C) | **2** | Guias Z frontais (a traseira usa o 4º trilho do estoque) |
 | 11 | **BLTouch** (original ou clone 3DTouch) | sonda de pino (vidro exige pino; indutiva não serve) | **1** | `G34` (auto-alinhamento dos 2 fusos) + malha `G29`; a TinyBee tem porta 3D-Touch |
 | 12 | Porca T M3 + parafuso M3×8 | adicionais aos do item 6/7 | **+40** | Fixação dos 3 trilhos Z nas colunas |
-| 13 | Acoplador flexível 5×8 mm | se os atuais não forem reaproveitáveis | 0–2 | Motor → fuso TR8 (conferir estoque) |
-| 14 | **Fuso TR8 × 400 mm, passo 8 mm** (TR8×8, 4 entradas) **+ castanha de bronze** | kit fuso+castanha | **2** | Acionamento Z frontal — os TR8 atuais viram reserva |
-| 15 | **Mancal KP08 ou KFL08** (eixo Ø8) | com rolamento | **2** | Apoio dos fusos na base (motor embaixo, estilo Trident) |
+| 13 | Acoplador flexível 5×8 mm | se os atuais não forem reaproveitáveis | 1–3 | Motor → fuso TR8 (conferir estoque; precisamos de 3) |
+| 14 | **Fuso TR8 × 400 mm, passo 8 mm** (TR8×8, 4 entradas) **+ castanha de bronze** | kit fuso+castanha | **3** | Trident completo: frontal-esq., frontal-dir. e central traseiro |
+| 15 | **Mancal KP08 ou KFL08** (eixo Ø8) | com rolamento | **3** | Apoio dos fusos na base (motor embaixo, estilo Trident) |
 | 16 | **Hotend V6 com bloco Volcano** | ⚠️ versão **12 V** (cartucho 40 W 12 V + termistor) — muitos kits vêm 24 V | **1** | Novo cabeçote; substitui o hotend atual envolto em fita |
+| 17 | **Placa MKS Monster8 V2** | 8 slots de driver, entrada 12–24 V | **1** | Substitui a TinyBee (vira reserva); viabiliza 3× Z independente |
+| 18 | **Motor NEMA17** | similar aos atuais (~40 mm, 1,5–1,7 A; confirmar etiqueta dos existentes) | **1** | 3º fuso Z |
+| 19 | **Driver de passo** | 1× igual aos 5 atuais (identificar modelo — pendência do inventário) | **1** | 6º slot da Monster8; upgrade opcional futuro: 8× TMC2209 |
+| 20 | Módulo **MKS WiFi** (ESP12S) | opcional | 0–1 | Repõe o WiFi embutido que a TinyBee tinha |
 
 ## Conferir no estoque antes de comprar (já devem existir)
 

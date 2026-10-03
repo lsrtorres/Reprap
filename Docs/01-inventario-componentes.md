@@ -6,7 +6,7 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 
 | Item | Identificação | Status |
 |---|---|---|
-| Placa controladora | **MKS TinyBee V1.0** (Makerbase, ESP32 com WiFi, 5 slots de driver) | Confirmado (IMG_0322) |
+| Placa controladora | **MKS TinyBee V1.0** (Makerbase, ESP32 com WiFi, 5 slots de driver) — será substituída pela **MKS Monster8 V2** (8 slots) e vira reserva ([decisão](03-requisitos-e-decisoes.md)) | Confirmado (IMG_0322) |
 | Drivers de passo | Módulos removíveis com dissipador azul — ❓ modelo (A4988 / DRV8825 / TMC2209?) | A confirmar |
 | Fonte 1 | **ST-120-12** — **12 V 10 A (120 W)**, fab. 2021 | Confirmado (IMG_0322 + Leandro) |
 | Fonte 2 | Fonte chaveada prata maior — **12 V 30 A (360 W)** | Confirmado (Leandro) |
