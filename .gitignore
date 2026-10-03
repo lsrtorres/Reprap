@@ -1,0 +1,10 @@
+# Zips de download (conteúdo já extraído no repositório)
+Fotos/*.zip
+
+# Temporários
+*.tmp
+*.bak
+~$*
+
+# Fusion 360 locks/exports temporários
+*.lck
