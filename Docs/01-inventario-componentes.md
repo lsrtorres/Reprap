@@ -8,8 +8,8 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 |---|---|---|
 | Placa controladora | **MKS TinyBee V1.0** (Makerbase, ESP32 com WiFi, 5 slots de driver) | Confirmado (IMG_0322) |
 | Drivers de passo | Módulos removíveis com dissipador azul — ❓ modelo (A4988 / DRV8825 / TMC2209?) | A confirmar |
-| Fonte 1 | **ST-120-12** — etiqueta diz **12 V 10 A (120 W)**, fab. 2021; Leandro informou que as fontes são 12 V 30 A — ⚠️ divergência com a etiqueta, re-checar | A re-checar (IMG_0322) |
-| Fonte 2 | Fonte chaveada prata maior — **12 V 30 A (360 W)** (informado pelo Leandro) | Confirmado |
+| Fonte 1 | **ST-120-12** — **12 V 10 A (120 W)**, fab. 2021 | Confirmado (IMG_0322 + Leandro) |
+| Fonte 2 | Fonte chaveada prata maior — **12 V 30 A (360 W)** | Confirmado (Leandro) |
 | MOSFET externo | Módulo preto para mesa aquecida, com borne parafusado | Confirmado (IMG_0321/0322) |
 | Distribuição | Conectores WAGO tipo 221 (5 vias) ×2 | Confirmado (IMG_0321) |
 | Display | Tela em caixa impressa branca no meio da torre — ❓ modelo (MKS TFT? 12864?) | A confirmar (IMG_0317) |
@@ -27,8 +27,8 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 | Item | Identificação | Status |
 |---|---|---|
 | Gantry XY | Estilo Ultimaker: eixos cruzados com correias GT2 no perímetro, blocos deslizantes impressos | Confirmado (IMG_0320/0325/0326/0328) |
-| Trilho linear | Pelo menos 1 trilho MGN (tampas verdes) usado no gantry — ❓ tamanho (MGN12?) e quantidade | A confirmar (IMG_0320/0326) |
-| Eixos lisos (gantry) | Barras retificadas **Ø8 mm × 300 mm** | Confirmado (Leandro) — ❓ quantidade total |
+| Trilho linear | Trilho(s) MGN com **~8 mm de largura × 300 mm** (largura medida sugere **MGN9**, tampas verdes) — ❓ quantidade exata e largura do carrinho | Parcial (Leandro + IMG_0320/0326) |
+| Eixos lisos (gantry) | Barras retificadas **Ø8 mm × ~400 mm** (2 un.?) | Confirmado (Leandro) — ❓ quantidade total e comprimento exato |
 | Eixos lisos (torres Z) | 2 barras por torre (4 no total) — ❓ diâmetro e comprimento | A confirmar |
 | Fusos Z | 2 fusos **trapezoidais TR8** verticais (torres esq./dir.), acionados por cima, porca de bronze — ❓ passo/avanço (TR8×8? ×2?) e comprimento | Confirmado (Leandro) |
 | Curso XY atual | **~180 mm** em X e Y (limite do quadro atual de 380 mm) | Confirmado (Leandro) |
@@ -60,13 +60,12 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 
 ## Medições pendentes (fazer na máquina)
 
-1. ⚠️ Re-checar etiqueta da fonte ST-120-12 (etiqueta diz 10 A; informado 30 A) — se forem 2× 360 W, ótimo; se uma for 120 W, a divisão de cargas muda
-2. Modelo dos drivers de passo (tirar um do slot e fotografar)
-3. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
-4. Trilho(s) MGN: largura (12 mm?), comprimento e **quantos existem**
-5. Quantidade total de barras lisas Ø8×300 disponíveis no gantry atual
-6. Barras lisas das torres Z: diâmetro e comprimento
-7. Fusos TR8: passo/avanço (ponta: medir o deslocamento em 1 volta — 2 mm ou 8 mm) e comprimento
-8. Curso Z atual
-9. Modelo do display
-10. Modelo do hotend e da extrusora
+1. Trilhos MGN: **quantos existem** e largura exata do trilho e do carrinho (8 mm sugere MGN9 — trilho 9 mm / carrinho ~20 mm)
+2. Quantidade total e comprimento exato das barras lisas Ø8 do gantry (~400 mm)
+3. Modelo dos drivers de passo (tirar um do slot e fotografar)
+4. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
+5. Barras lisas das torres Z: diâmetro e comprimento
+6. Fusos TR8: passo/avanço (ponta: medir o deslocamento em 1 volta — 2 mm ou 8 mm) e comprimento
+7. Curso Z atual
+8. Modelo do display
+9. Modelo do hotend e da extrusora
