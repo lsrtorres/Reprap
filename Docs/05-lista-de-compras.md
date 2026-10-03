@@ -8,7 +8,7 @@ Consolidada em 2026-10-03 após aprovação dos conceitos ([04](04-conceito-novo
 
 | # | Item | Especificação | Qtde | Uso |
 |---|---|---|---|---|
-| 1 | Perfil alumínio 20×20 T-slot (canal 6) | **440 mm** | **2** | Laterais do anel XY superior (apoiam sobre as colunas) |
+| 1 | Perfil alumínio 20×20 T-slot (canal 6) | **440 mm** | **3** | 2× laterais do anel XY superior + 1× **coluna Z central traseira** (estoque tem só 4× 630, usados inteiros nos cantos) |
 | 2 | Perfil alumínio 20×20 T-slot (canal 6) | **400 mm** | **11** | Frente/trás do anel superior (2) + anel do deck (4) + anel da base (4) + viga X (1, cortar em 340) |
 | 3 | Correia GT2 largura 6 mm (aberta) | **5 m** | 1 rolo | 2 loops CoreXY (~2,1 m cada) + sobra |
 | 4 | Polia idler GT2 **lisa** 20 dentes equiv., furo 5 mm, p/ correia 6 mm | — | **6** | Desvios onde o **dorso** da correia toca |

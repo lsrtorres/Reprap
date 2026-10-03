@@ -53,9 +53,9 @@ def verificar_z():
     print("OK: Z de 200 mm fecha com fuso de 400 e trilho de 300.\n")
 
     print("=== Lista de corte (perfis 20x20) ===")
-    print(f"Colunas: 4x {P.COLUNA_L:.0f} (estoque, inteiras) + 1x {P.COL_TRAS_L:.0f} (cortar de um 630)")
+    print(f"Colunas: 4x {P.COLUNA_L:.0f} (estoque, inteiras) + 1x {P.COL_TRAS_L:.0f} comprada (coluna Z traseira)")
     print(f"Anel superior: 2x 440 + 2x 400 | Deck: 4x 400 | Base: 4x 400 | Viga X: 1x {P.VIGA_X_L:.0f} (de um 400)")
-    print("Compra: 2x 440 + 11x 400 | Estoque: 5x 630 (4 inteiros + 1 p/ corte)\n")
+    print("Compra: 3x 440 + 11x 400 | Estoque: 4x 630 inteiros (unico corte do projeto: viga X 400->340)\n")
 
 
 # ---------------------------------------------------------------- montagem

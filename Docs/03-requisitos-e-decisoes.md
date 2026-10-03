@@ -45,8 +45,7 @@ Este documento é a memória viva do projeto. Toda decisão relevante entra na t
 
 ## Próximos passos
 
-1. **[Leandro]** Fazer o pedido da [lista de compras](05-lista-de-compras.md) (⚠️ perfis na correção final: **2× 440 + 11× 400**)
-2. **[Leandro]** Confirmar o estoque: **5 perfis de 630** disponíveis? (4 colunas inteiras + 1 p/ cortar)
-3. **[Leandro]** Abrir `CAD/11-esqueleto-maquina_v1.step` no Fusion 360 e validar ([08](08-esqueleto-maquina.md))
-4. Modelagem das peças impressas no Fusion 360, na ordem do [08](08-esqueleto-maquina.md): juntas XY, carro do toolhead (Volcano+BLTouch), blocos de motor, braços da mesa, suportes do deck/baia
-5. **[Leandro]** Pendências leves do inventário: etiqueta dos motores, modelo da extrusora, contagem dos perfis 380
+1. **[Leandro]** Fazer o pedido da [lista de compras](05-lista-de-compras.md) (perfis: **3× 440 + 11× 400** — estoque de 630 confirmado em 4, usados inteiros)
+2. **[Leandro]** Abrir `CAD/11-esqueleto-maquina_v1.step` no Fusion 360 e validar ([08](08-esqueleto-maquina.md))
+3. Modelagem das peças impressas no Fusion 360, na ordem do [08](08-esqueleto-maquina.md): juntas XY, carro do toolhead (Volcano+BLTouch), blocos de motor, braços da mesa, suportes do deck/baia
+4. **[Leandro]** Pendências leves do inventário: etiqueta dos motores, modelo da extrusora, contagem dos perfis 380

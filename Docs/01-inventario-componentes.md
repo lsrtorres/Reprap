@@ -64,4 +64,4 @@ Nenhuma pendência bloqueia o gantry XY. As restantes são para as fases Z e ele
 1. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
 2. Modelo do display
 3. Modelo da extrusora vermelha (o hotend será substituído por V6 Volcano — [decisão](03-requisitos-e-decisoes.md); fusos TR8 atuais viram reserva, substituídos por TR8×8 novos)
-4. Quantos perfis de **630 mm** e de **380 mm** existem no estoque (o esqueleto da máquina usa 5× 630 como colunas)
+4. Quantos perfis de **380 mm** existem no estoque (630: confirmado **4**, todos usados inteiros como colunas; a 5ª coluna é um 440 comprado)

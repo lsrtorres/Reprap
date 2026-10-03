@@ -16,7 +16,7 @@ Gerado por [`CAD/scripts/esqueleto_maquina.py`](../CAD/scripts/esqueleto_maquina
 | −630 … −650 | **Anel da base** (4× perfil 400 entre colunas), no chão |
 | −650 | Piso |
 
-- **Colunas**: 4× perfil **630 inteiro** nos cantos (do piso até sob o anel superior) + 1 coluna central traseira de **440** (cortada de um 630), do deck ao anel — carrega o 3º trilho Z
+- **Colunas**: 4× perfil **630 inteiro** nos cantos (do piso até sob o anel superior — estoque confirmado: exatamente 4) + 1 coluna central traseira de **440** (comprada — mesma medida das laterais do anel), do deck ao anel — carrega o 3º trilho Z
 - **Mesa**: rígida em 3 pontos (**sem molas** — `z_tilt` + `bed_mesh` substituem o nivelamento manual); vidro 3 + MK3 3 + espaçador 6 + braço 8
 - Posições dos fusos: frontais (±180, −195), traseiro (0, +195) — coordenadas que depois alimentam o `[z_tilt]` do Klipper
 
@@ -34,9 +34,11 @@ Gerado por [`CAD/scripts/esqueleto_maquina.py`](../CAD/scripts/esqueleto_maquina
 
 | Origem | Peças |
 |---|---|
-| **Comprar** | 2× **440** + 11× **400** |
-| **Estoque (630)** | 4× inteiros (colunas) + 1× cortado em **440** (coluna Z traseira; sobra 190) |
+| **Comprar** | 3× **440** + 11× **400** |
+| **Estoque (630)** | 4× inteiros (colunas dos cantos) — sem corte |
 | **Estoque (380)** | livres p/ travessas da baia (suportes de fonte/SKIPR) e reforços |
+
+> Único corte de perfil do projeto: a viga X (400 → 340).
 
 ## Fluxo com o Fusion 360
 
