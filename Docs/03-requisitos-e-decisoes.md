@@ -46,6 +46,6 @@ Este documento é a memória viva do projeto. Toda decisão relevante entra na t
 ## Próximos passos
 
 1. **[Leandro]** Fazer o pedido da [lista de compras](05-lista-de-compras.md) (perfis: **3× 440 + 11× 400** — estoque de 630 confirmado em 4, usados inteiros)
-2. **[Leandro]** Abrir `CAD/11-esqueleto-maquina_v1.step` no Fusion 360 e validar ([08](08-esqueleto-maquina.md))
+2. **[Leandro]** Montagem no Fusion pelo fluxo do [09](09-montagem-fusion.md): upload dos STEPs de `CAD/componentes/` + STEPs de fabricante (MGN9C, KP08, castanha T8), inserção um a um, juntas rígidas/sliders e simulação de movimentos
 3. Modelagem das peças impressas no Fusion 360, na ordem do [08](08-esqueleto-maquina.md): juntas XY, carro do toolhead (Volcano+BLTouch), blocos de motor, braços da mesa, suportes do deck/baia
 4. **[Leandro]** Pendências leves do inventário: etiqueta dos motores, modelo da extrusora, contagem dos perfis 380

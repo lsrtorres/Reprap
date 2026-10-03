@@ -122,6 +122,19 @@ def idler_20t(h: float = 10.0) -> cq.Workplane:
     )
 
 
+def fuso_tr8(comprimento: float) -> cq.Workplane:
+    """Fuso TR8 simplificado (cilindro Ø8 com chanfros nas pontas) — a rosca
+    trapezoidal não é modelada (desnecessária p/ montagem/simulação).
+    Eixo em Z, base em z=0."""
+    return (
+        cq.Workplane("XY")
+        .circle(P.FUSO_D / 2)
+        .extrude(comprimento)
+        .faces(">Z").chamfer(0.8)
+        .faces("<Z").chamfer(0.8)
+    )
+
+
 def mesa_mk3() -> cq.Workplane:
     """Mesa MK3 220x220x3 + vidro 3 mm. Base do alumínio em z=0, centrada."""
     mk3 = (

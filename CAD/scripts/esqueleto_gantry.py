@@ -139,11 +139,13 @@ def montar() -> cq.Assembly:
 def exportar_componentes():
     os.makedirs(DIR_COMP, exist_ok=True)
     itens = {
+        "perfil-2020-630": C.perfil_2020(P.COLUNA_L),
         "perfil-2020-440": C.perfil_2020(440),
         "perfil-2020-400": C.perfil_2020(400),
         "perfil-2020-340-viga-x": C.perfil_2020(P.VIGA_X_L),
         "mgn9-trilho-300": C.mgn9_trilho(300),
         "mgn9-carrinho": C.mgn9_carrinho(),
+        "fuso-tr8x8-400": C.fuso_tr8(P.FUSO_L),
         "nema17": C.nema17(),
         "polia-gt2-20t": C.polia_gt2_20t(),
         "idler-20t": C.idler_20t(),

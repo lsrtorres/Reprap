@@ -40,6 +40,7 @@ New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\projects\c--Reprap\m
 - [06 — Conceito do eixo Z (estilo Voron Trident)](Docs/06-conceito-z-voron.md)
 - [07 — Esqueleto dimensional do gantry](Docs/07-esqueleto-gantry.md)
 - [08 — Esqueleto dimensional da máquina completa](Docs/08-esqueleto-maquina.md)
+- [09 — Montagem peça a peça no Fusion 360 (juntas + simulação)](Docs/09-montagem-fusion.md)
 
 ## Fluxo de trabalho de CAD
 
