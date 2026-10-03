@@ -1,0 +1,2 @@
+- [Visão geral do projeto RepRap](reprap-visao-geral.md) — repo C:\Reprap→github lsrtorres/Reprap; memória real vive em Docs/ do repo; 200³, Fusion 360
+- [Perfil do Leandro](leandro-perfil.md) — PT-BR, tem a máquina em mãos, colaboração via git

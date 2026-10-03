@@ -17,6 +17,18 @@ Projeto colaborativo de atualização/redesenho de uma impressora 3D RepRap exis
 | `Fotos/` | Fotos da impressora atual (originais `.heic` + convertidas em `Fotos/jpg/`) |
 | `CAD/` | Modelos do Fusion 360 exportados (`.f3d`, `.step`) e STEPs de componentes de terceiros |
 | `Firmware/` | Configuração de firmware (Marlin para MKS TinyBee) quando chegarmos nessa fase |
+| `Memoria/` | Memória persistente do assistente (Claude Code) — versionada junto com o projeto |
+
+### Memória do assistente (`Memoria/`)
+
+O Claude Code guarda a memória por projeto em `~\.claude\projects\c--Reprap\memory\`. Para que ela seja versionada (requisito do projeto), esse diretório é uma **junction do NTFS** apontando para `Memoria/` dentro do repositório. Em uma máquina nova, após clonar o repo, recriar a junction (PowerShell):
+
+```powershell
+Remove-Item "$env:USERPROFILE\.claude\projects\c--Reprap\memory" -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\projects\c--Reprap\memory" -Target "C:\Reprap\Memoria"
+```
+
+(ajustar o sufixo `c--Reprap` conforme o caminho local do clone.)
 
 ## Documentos principais
 
