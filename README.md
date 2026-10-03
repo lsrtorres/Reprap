@@ -35,6 +35,8 @@ New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\projects\c--Reprap\m
 - [01 — Inventário de componentes](Docs/01-inventario-componentes.md)
 - [02 — Análise da máquina atual](Docs/02-analise-maquina-atual.md)
 - [03 — Requisitos e registro de decisões](Docs/03-requisitos-e-decisoes.md)
+- [04 — Conceito do novo gantry (CoreXY)](Docs/04-conceito-novo-gantry.md)
+- [05 — Lista de compras](Docs/05-lista-de-compras.md)
 
 ## Fluxo de trabalho de CAD
 

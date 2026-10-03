@@ -27,7 +27,7 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 | Item | Identificação | Status |
 |---|---|---|
 | Gantry XY | Estilo Ultimaker: eixos cruzados com correias GT2 no perímetro, blocos deslizantes impressos | Confirmado (IMG_0320/0325/0326/0328) |
-| Trilho linear | Trilho(s) MGN com **~8 mm de largura × 300 mm** (largura medida sugere **MGN9**, tampas verdes) — ❓ quantidade exata e largura do carrinho | Parcial (Leandro + IMG_0320/0326) |
+| Trilho linear | **4× trilho MGN9 (9 mm) × 300 mm** com carrinho (tampas verdes) | Confirmado (Leandro) |
 | Eixos lisos (gantry) | Barras retificadas **Ø8 mm × ~400 mm** (2 un.?) | Confirmado (Leandro) — ❓ quantidade total e comprimento exato |
 | Eixos lisos (torres Z) | 2 barras por torre (4 no total) — ❓ diâmetro e comprimento | A confirmar |
 | Fusos Z | 2 fusos **trapezoidais TR8** verticais (torres esq./dir.), acionados por cima, porca de bronze — ❓ passo/avanço (TR8×8? ×2?) e comprimento | Confirmado (Leandro) |
@@ -60,12 +60,12 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 
 ## Medições pendentes (fazer na máquina)
 
-1. Trilhos MGN: **quantos existem** e largura exata do trilho e do carrinho (8 mm sugere MGN9 — trilho 9 mm / carrinho ~20 mm)
-2. Quantidade total e comprimento exato das barras lisas Ø8 do gantry (~400 mm)
-3. Modelo dos drivers de passo (tirar um do slot e fotografar)
-4. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
-5. Barras lisas das torres Z: diâmetro e comprimento
-6. Fusos TR8: passo/avanço (ponta: medir o deslocamento em 1 volta — 2 mm ou 8 mm) e comprimento
-7. Curso Z atual
-8. Modelo do display
-9. Modelo do hotend e da extrusora
+Nenhuma pendência bloqueia o gantry XY. As restantes são para as fases Z e eletrônica:
+
+1. Modelo dos drivers de passo (tirar um do slot e fotografar)
+2. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
+3. Barras lisas das torres Z: diâmetro e comprimento
+4. Fusos TR8: passo/avanço (ponta: medir o deslocamento em 1 volta — 2 mm ou 8 mm) e comprimento
+5. Curso Z atual
+6. Modelo do display
+7. Modelo do hotend e da extrusora
