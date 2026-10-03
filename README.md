@@ -41,6 +41,7 @@ New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\projects\c--Reprap\m
 - [07 — Esqueleto dimensional do gantry](Docs/07-esqueleto-gantry.md)
 - [08 — Esqueleto dimensional da máquina completa](Docs/08-esqueleto-maquina.md)
 - [09 — Montagem peça a peça no Fusion 360 (juntas + simulação)](Docs/09-montagem-fusion.md)
+- [10 — Roteiro Fusion, Fase 1: o frame](Docs/10-roteiro-fusion-fase1-frame.md)
 
 ## Fluxo de trabalho de CAD
 
