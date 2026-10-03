@@ -29,10 +29,18 @@ Consolidada em 2026-10-03 após aprovação dos conceitos ([04](04-conceito-novo
 | 14 | **Fuso TR8 × 400 mm, passo 8 mm** (TR8×8, 4 entradas) **+ castanha de bronze** | kit fuso+castanha | **3** | Trident completo: frontal-esq., frontal-dir. e central traseiro |
 | 15 | **Mancal KP08 ou KFL08** (eixo Ø8) | com rolamento | **3** | Apoio dos fusos na base (motor embaixo, estilo Trident) |
 | 16 | **Hotend V6 com bloco Volcano** | ⚠️ versão **12 V** (cartucho 40 W 12 V + termistor) — muitos kits vêm 24 V | **1** | Novo cabeçote; substitui o hotend atual envolto em fita |
-| 17 | **Placa MKS Monster8 V2** | 8 slots de driver, entrada 12–24 V | **1** | Substitui a TinyBee (vira reserva); viabiliza 3× Z independente |
+| 17 | **Placa MKS Monster8 V2** | 8 slots de driver, entrada 12–24 V (MCU do **Klipper**) | **1** | Substitui a TinyBee (vira reserva); viabiliza 3× Z independente |
 | 18 | **Motor NEMA17** | similar aos atuais (~40 mm, 1,5–1,7 A; confirmar etiqueta dos existentes) | **1** | 3º fuso Z |
-| 19 | **Driver de passo** | 1× igual aos 5 atuais (identificar modelo — pendência do inventário) | **1** | 6º slot da Monster8; upgrade opcional futuro: 8× TMC2209 |
-| 20 | Módulo **MKS WiFi** (ESP12S) | opcional | 0–1 | Repõe o WiFi embutido que a TinyBee tinha |
+| 19 | **Driver de passo** | 1× igual aos 5 atuais (identificar modelo — pendência do inventário); Klipper aceita qualquer step/dir | **1** | 6º slot da Monster8; upgrade opcional futuro: 8× TMC2209 UART |
+| 20 | ~~Módulo MKS WiFi~~ | **cancelado** — com Klipper o host já provê rede/interface (Mainsail/Fluidd) | 0 | — |
+
+## Fase Klipper (host — aguardando decisão do caminho)
+
+| # | Item | Especificação | Qtde | Uso |
+|---|---|---|---|---|
+| 21 | Host Klipper | **(a)** 2ª instância no host da outra impressora (custo zero) · **(b)** Raspberry Pi (Zero 2 W já serve; 3/4 melhor) · **(c)** trocar o item 17 por **MKS SKIPR** (host embutido) | — | Roda o Klipper; placa vira só MCU |
+| 22 | Conversor buck 12→5 V ≥3 A | só no caminho (b) | 0–1 | Alimentar o Pi pela fonte de 12 V |
+| 23 | Acelerômetro **ADXL345** (opcional) | com cabo | 0–1 | Calibração do input shaper — onde o Klipper brilha no CoreXY |
 
 ## Conferir no estoque antes de comprar (já devem existir)
 

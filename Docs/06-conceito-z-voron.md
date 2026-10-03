@@ -26,17 +26,17 @@
 A TinyBee tem só 5 slots de driver (X, Y, Z, E0, E1) — com CoreXY + extrusora sobrariam 2 para o Z. **Decisão (2026-10-03): comprar uma MKS Monster8 V2** (8 slots removíveis, entrada 12–24 V, Marlin 2.x oficial) e fazer o **Trident completo**:
 
 - **3 fusos TR8 × 400 mm, passo 8 mm** (TR8×8, 4 entradas) + **castanhas de bronze** — frontal-esq., frontal-dir. e central traseiro; os TR8 atuais viram reserva
-- **3 motores NEMA17 independentes** (2 existentes + **1 a comprar**), cada um no seu slot → `G34`/`Z_STEPPER_AUTO_ALIGN` de **3 pontos** com a BLTouch: auto-tram verdadeiro de rolagem **e** inclinação
+- **3 motores NEMA17 independentes** (2 existentes + **1 a comprar**), cada um no seu slot → **`Z_TILT_ADJUST` do Klipper em 3 pontos** com a BLTouch: auto-tram verdadeiro de rolagem **e** inclinação (firmware decidido: **Klipper**)
 - **Mancais KP08 ou KFL08 (Ø8)** na base, um por fuso — motor embaixo, acoplador 5×8, mancal logo acima, ponta superior do fuso livre
-- **Sonda: BLTouch** — `G34` + malha `G29` sobre o vidro
-- Slots da Monster8: X, Y, E0 + 3× Z (Z/E1/E2 conforme o mapeamento do Marlin) = 6 usados, 2 de folga
-- **Drivers**: reaproveitam-se os 5 atuais + 1 igual a comprar (identificar o modelo — pendência do inventário); upgrade opcional futuro: jogo de TMC2209
-- **WiFi**: módulo MKS WiFi (ESP12S) opcional na Monster8 repõe o WiFi embutido da TinyBee
-- **TinyBee**: vira reserva (exceção ao requisito R2 aprovada pelo Leandro)
+- **Sonda: BLTouch** — `Z_TILT_ADJUST` + `BED_MESH_CALIBRATE` sobre o vidro
+- Slots da Monster8: X, Y, E0 + 3× Z = 6 usados, 2 de folga (no Klipper cada stepper é declarado livremente no `printer.cfg`)
+- **Drivers**: reaproveitam-se os 5 atuais + 1 igual a comprar (identificar o modelo — pendência do inventário); Klipper aceita qualquer driver step/dir; upgrade opcional futuro: jogo de TMC2209 (UART)
+- **TinyBee**: vira reserva (exceção ao requisito R2 aprovada pelo Leandro) — ESP32 não roda Klipper de qualquer forma
+- **Host Klipper**: decisão aberta — 2ª instância no host da outra impressora do Leandro, Raspberry Pi dedicado, ou MKS SKIPR no lugar da Monster8 (host embutido)
 
-> Passos/mm do Z com TR8×8 e motor 1,8°: 16 microsteps → **400 steps/mm**.
+> `rotation_distance` no Klipper: Z com TR8×8 = **8**; XY com GT2 + polia 20T = **40**.
 
-Alternativas descartadas: manter TinyBee com 2 fusos + seguidor passivo (pitch não ajustável por software); 3 fusos sincronizados por correia (tram mecânico); MKS SKIPR (excelente, mas muda tudo para Klipper de uma vez — fica como caminho futuro, a Monster8 também roda Klipper).
+Alternativas descartadas: manter TinyBee com 2 fusos + seguidor passivo (pitch não ajustável por software); 3 fusos sincronizados por correia (tram mecânico).
 
 ## O que é liberado dos componentes atuais
 
