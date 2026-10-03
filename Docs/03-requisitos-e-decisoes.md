@@ -27,14 +27,22 @@ Este documento é a memória viva do projeto. Toda decisão relevante entra na t
 | 2026-10-03 | **Viga X = perfil 20×20 + trilho MGN montado nele**; toolhead corre no MGN | Pedido do Leandro (robustez); perfil dá rigidez torcional que barras não dão | ✅ Ativa |
 | 2026-10-03 | Trilho MGN na **face frontal** da viga X (não no topo), estilo Voron | Sugestão do Leandro: placa do toolhead plana, CG do cabeçote perto do trilho (menos momento), topo livre p/ esteira — detalhes em [04](04-conceito-novo-gantry.md) | ✅ Ativa |
 | 2026-10-03 | ~~Guias Y = 2 barras Ø8×400 com LM8UU~~ | Substituída no mesmo dia ao confirmar que existem 4 trilhos MGN9 | ♻️ Substituída |
-| 2026-10-03 | **Guias Y = 2× trilho MGN9 300 mm** parafusados nos perfis laterais; viga X usa o 3º trilho; 4º fica de reserva; barras Ø8×400 viram reserva p/ futuro | Confirmados 4× MGN9×300: trilho direto no perfil é mais rígido que barra em bloco impresso, carros Y viram placas simples e dispensa comprar LM8UU | ✅ Ativa |
+| 2026-10-03 | **Guias Y = 2× trilho MGN9 300 mm** parafusados nos perfis laterais; viga X usa o 3º trilho; 4º fica de reserva | **Mantém a solução da máquina atual** (o Y já corre em 1 MGN9 de cada lado; barras lisas só existem no Z); carros Y viram placas simples e dispensa LM8UU | ✅ Ativa |
+| 2026-10-03 | **Juntas XY estilo Voron**: polias desviadoras **encapsuladas** dentro das peças que unem a viga X aos carrinhos Y (não expostas no topo) | Pedido do Leandro; protege as polias, alinha os dois planos de correia por construção e enrijece a junta | ✅ Ativa |
+| 2026-10-03 | **Ancoragem das correias por ranhuras** na traseira do carro do toolhead (dente da GT2 morde a ranhura impressa), uma por plano de correia | Pedido do Leandro; elimina a peça única "de dois andares", facilita troca de correia e tensionamento | ✅ Ativa |
+| 2026-10-03 | **Z estilo Voron Trident nas guias**: 3 guias MGN verticais (2 colunas frontais + 1 central traseira), mesa em 3 pontos; torres atuais com barras Ø8 aposentadas | Pedido do Leandro; conceito detalhado em [06-conceito-z-voron.md](06-conceito-z-voron.md) | ✅ Ativa |
+| 2026-10-03 | Acionamento do Z (**Opção A**): **2 fusos frontais** (motores existentes, drivers Z + E1 → `G34`) + ponto traseiro **seguidor passivo** | TinyBee tem 5 slots (X, Y, Z, E0, E1) — sem slot p/ 3º Z independente; Leandro especificou o hardware da opção | ✅ Ativa |
+| 2026-10-03 | **Fusos Z novos: TR8×8 (passo 8) × 400 mm + castanhas de bronze**; apoio em **mancal KP08/KFL08** na base, motor embaixo; TR8 atuais viram reserva | Especificação do Leandro; passo 8 dá Z rápido (400 steps/mm @ 16 µsteps) e fusos novos eliminam o desgaste/oxidação dos atuais | ✅ Ativa |
+| 2026-10-03 | **Sonda BLTouch** no toolhead | Especificação do Leandro; vidro exige sonda de pino; TinyBee tem porta 3D-Touch; habilita `G34` + `G29` | ✅ Ativa |
+| 2026-10-03 | **Hotend novo: V6 com bloco Volcano, 12 V** (cartucho 40 W + termistor) | Especificação do Leandro; substitui o hotend atual; extrusora vermelha direct-drive continua | ✅ Ativa |
 | 2026-10-03 | Divisão de energia: fonte **360 W → mesa + hotend + motores/placa**; fonte **120 W → ventoinhas/iluminação/aux** (detalhar na fase de eletrônica) | Mesa MK3 12 V puxa ~10–11 A sozinha; 30 A comportam o sistema todo com margem | ✅ Ativa |
 | 2026-10-03 | Anel XY com perfis 20×20 de **440 mm** (vão interno 400 mm) — **aprovado para compra** | Comporta 200 mm de curso com folga nos dois eixos; dimensional em [04](04-conceito-novo-gantry.md); lista de compras em [05](05-lista-de-compras.md). **OK do Leandro** | ✅ Ativa |
 
 ## Próximos passos
 
-1. **[Leandro]** Fazer o pedido da [lista de compras](05-lista-de-compras.md)
-2. **[Claude]** Esqueleto dimensional do gantry (quadro 440, trilhos, blocos de canto, viga X) — gerar STEP de referência para importar no Fusion 360
-3. **[Claude]** Levantar STEPs de componentes padrão (NEMA17, perfil 20×20, MGN9, GT2, TinyBee, mesa MK3) para `CAD/componentes/`
-4. **[Leandro]** Medições da fase Z/eletrônica ([inventário](01-inventario-componentes.md), seção final) — sem pressa, não bloqueiam o gantry
-5. Modelagem das peças impressas (blocos de motor, cantos, carros Y, carro do toolhead) no Fusion 360
+1. **[Leandro]** Fazer o pedido da [lista de compras](05-lista-de-compras.md) (⚠️ quantidades de perfil corrigidas: 4× 440 + 5× 400)
+2. **[Leandro]** Confirmar a **Opção A** de acionamento do Z (2 fusos frontais + seguidor traseiro — [06](06-conceito-z-voron.md))
+3. **[Leandro]** Abrir `CAD/10-esqueleto-gantry_v1.step` no Fusion 360 e validar o esqueleto ([07](07-esqueleto-gantry.md))
+4. **[Claude]** Estender o esqueleto com colunas, anel da base e o Z Voron (após OK da Opção A)
+5. Modelagem das peças impressas no Fusion 360 (juntas XY com polias encapsuladas, carro do toolhead com ranhuras de correia, blocos de motor)
+6. **[Leandro]** Medições da fase Z/eletrônica ([inventário](01-inventario-componentes.md)) — passo do TR8 é o mais importante

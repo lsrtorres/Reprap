@@ -8,3 +8,7 @@ Fotos/*.zip
 
 # Fusion 360 locks/exports temporários
 *.lck
+
+# Ambiente Python local (scripts de CAD)
+.venv/
+__pycache__/

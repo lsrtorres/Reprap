@@ -37,8 +37,9 @@ Manter cinemática e só limpar o roteamento. Não resolve a insatisfação (as 
 
 ## Arquitetura das guias (decidida 2026-10-03, revisada após confirmação dos 4× MGN9)
 
-- **Y (2×)**: **trilhos MGN9×300 parafusados no topo dos perfis laterais** do anel XY. Os carros Y viram placas simples parafusadas nos carrinhos — mais rígido que barra Ø8 em bloco impresso, sem blocos de canto para barras, sem LM8UU. As barras Ø8×400 ficam de **reserva** (candidatas naturais ao Z no futuro)
-- **X (viga)**: **perfil 20×20 + trilho MGN (~300 mm) montado na face frontal** (estilo Voron/RatRig) — o perfil dá rigidez à viga, o trilho guia o toolhead. Montagem frontal (e não no topo) porque: placa do toolhead fica plana e parafusa direto no carrinho (sem "L" contornando a viga), o trilho fica mais perto do centro de massa do cabeçote (menos momento nas acelerações) e o topo da viga fica livre para esteira porta-cabos e endstop. Trilho fixado com parafusos M3 + porcas T no canal do perfil. As correias ancoram no carro do toolhead
+- **Y (2×)**: **trilhos MGN9×300 parafusados no topo dos perfis laterais** do anel XY — mantém o conceito da máquina atual (o Y já corre em MGN9 dos dois lados). Os carros Y são as **juntas XY estilo Voron**: peça impressa que une o carrinho Y à viga X **com as polias desviadoras encapsuladas dentro dela**, nos dois planos de correia — nada de polia exposta no topo
+- **X (viga)**: **perfil 20×20 + trilho MGN (~300 mm) montado na face frontal** (estilo Voron/RatRig) — o perfil dá rigidez à viga, o trilho guia o toolhead. Montagem frontal (e não no topo) porque: placa do toolhead fica plana e parafusa direto no carrinho (sem "L" contornando a viga), o trilho fica mais perto do centro de massa do cabeçote (menos momento nas acelerações) e o topo da viga fica livre para esteira porta-cabos e endstop. Trilho fixado com parafusos M3 + porcas T no canal do perfil
+- **Ancoragem das correias no toolhead**: as pontas das correias prendem na **traseira do carro do toolhead por ranhuras GT2 impressas** (o dente da correia morde a ranhura), uma ranhura em cada plano de correia, com canal de saída para o excedente — sem peça única de dois andares. Tensionamento puxando a ponta e recravando na ranhura (estilo Voron)
 
 ```
              topo livre (esteira)
@@ -72,9 +73,9 @@ Anel de **440 mm externo** (vão interno 400 mm) — aprovado para compra em 202
 >
 > Os perfis de **380 mm atuais ficam para travessas internas e a caixa da eletrônica**; os **630 mm continuam como colunas verticais** (torres Z + estrutura). Lista de corte definitiva sai do CAD.
 
-## Z (sem mudança de conceito)
+## Z
 
-Mantém as 2 torres com fuso TR8 + 2 barras lisas cada, motores em cima, mesa MK3 220×220 com vidro e 4 molas. Curso alvo 200 mm — folga de sobra com colunas de 630 mm. Melhorias pontuais a avaliar no CAD: mancal na ponta inferior do fuso e acoplamento flexível, se já não houver.
+O conceito do Z mudou para **guias MGN estilo Voron Trident** (2 colunas frontais + 1 central traseira, mesa em 3 pontos) — ver [06-conceito-z-voron.md](06-conceito-z-voron.md). As torres atuais com barras Ø8 são aposentadas.
 
 ## Lista de compras
 

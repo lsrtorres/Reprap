@@ -28,8 +28,7 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 |---|---|---|
 | Gantry XY | Estilo Ultimaker: eixos cruzados com correias GT2 no perímetro, blocos deslizantes impressos | Confirmado (IMG_0320/0325/0326/0328) |
 | Trilho linear | **4× trilho MGN9 (9 mm) × 300 mm** com carrinho (tampas verdes) | Confirmado (Leandro) |
-| Eixos lisos (gantry) | Barras retificadas **Ø8 mm × ~400 mm** (2 un.?) | Confirmado (Leandro) — ❓ quantidade total e comprimento exato |
-| Eixos lisos (torres Z) | 2 barras por torre (4 no total) — ❓ diâmetro e comprimento | A confirmar |
+| Eixos lisos (torres Z) | Barras retificadas **Ø8 mm × ~400 mm**, 2 por torre (4 no total) — únicos eixos em barra da máquina; o gantry XY é todo em MGN9 | Confirmado (Leandro) |
 | Fusos Z | 2 fusos **trapezoidais TR8** verticais (torres esq./dir.), acionados por cima, porca de bronze — ❓ passo/avanço (TR8×8? ×2?) e comprimento | Confirmado (Leandro) |
 | Curso XY atual | **~180 mm** em X e Y (limite do quadro atual de 380 mm) | Confirmado (Leandro) |
 | Correias | GT2 6 mm com polias e esticadores | Confirmado (IMG_0320/0328) |
@@ -64,8 +63,5 @@ Nenhuma pendência bloqueia o gantry XY. As restantes são para as fases Z e ele
 
 1. Modelo dos drivers de passo (tirar um do slot e fotografar)
 2. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
-3. Barras lisas das torres Z: diâmetro e comprimento
-4. Fusos TR8: passo/avanço (ponta: medir o deslocamento em 1 volta — 2 mm ou 8 mm) e comprimento
-5. Curso Z atual
-6. Modelo do display
-7. Modelo do hotend e da extrusora
+3. Modelo do display
+4. Modelo da extrusora vermelha (o hotend será substituído por V6 Volcano — [decisão](03-requisitos-e-decisoes.md); fusos TR8 atuais viram reserva, substituídos por TR8×8 novos)

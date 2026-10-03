@@ -6,8 +6,8 @@ Baseada nas fotos de 2026-10-03 (`Fotos/jpg/IMG_0317...0328`). A máquina está 
 
 Impressora de pórtico superior **estilo Ultimaker**:
 
-- **XY no topo**: dois eixos cruzados (barras lisas) com o cabeçote na interseção; blocos deslizantes impressos correm em barras no perímetro do quadro superior, acionados por correias GT2. Motores X/Y fixados por baixo dos perfis superiores, nos cantos traseiros (IMG_0328). Há pelo menos um trilho linear MGN complementando o guiamento (IMG_0320/0326).
-- **Z**: a mesa desce durante a impressão. Duas torres laterais, cada uma com 1 fuso central + 2 barras lisas; os fusos são acionados por motores no **topo** das torres (IMG_0317). Porcas de bronze nas plataformas (IMG_0325).
+- **XY no topo**: cabeçote na interseção de eixos cruzados, acionado por correias GT2. O gantry XY é **todo guiado por trilhos MGN9** (Y: um de cada lado; X: no eixo transversal) — barras lisas só existem no Z. Motores X/Y fixados por baixo dos perfis superiores, nos cantos traseiros (IMG_0328/0320/0326).
+- **Z**: a mesa desce durante a impressão. Duas torres laterais, cada uma com 1 fuso TR8 central + 2 barras lisas Ø8×~400; os fusos são acionados por motores no **topo** das torres (IMG_0317). Porcas de bronze nas plataformas (IMG_0325).
 - **Cabeçote**: extrusora direct-drive (corpo vermelho) sobre o carro central, hotend para baixo (IMG_0317/0326). Cabos levados por esteira porta-cabos impressa em branco.
 - **Mesa**: vidro com clipes sobre plataforma impressa com 4 molas de nivelamento (IMG_0317/0325).
 - **Base**: caixa inferior em perfis + chapas perfuradas brancas abrigando as 2 fontes, a MKS TinyBee, o MOSFET da mesa e a distribuição WAGO; 2 ventoinhas no painel frontal (IMG_0321/0322/0323).

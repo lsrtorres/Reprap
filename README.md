@@ -37,6 +37,8 @@ New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\projects\c--Reprap\m
 - [03 — Requisitos e registro de decisões](Docs/03-requisitos-e-decisoes.md)
 - [04 — Conceito do novo gantry (CoreXY)](Docs/04-conceito-novo-gantry.md)
 - [05 — Lista de compras](Docs/05-lista-de-compras.md)
+- [06 — Conceito do eixo Z (estilo Voron Trident)](Docs/06-conceito-z-voron.md)
+- [07 — Esqueleto dimensional do gantry](Docs/07-esqueleto-gantry.md)
 
 ## Fluxo de trabalho de CAD
 

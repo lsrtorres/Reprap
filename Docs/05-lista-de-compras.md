@@ -1,20 +1,34 @@
-# 05 — Lista de compras (gantry CoreXY)
+# 05 — Lista de compras (gantry CoreXY + Z)
 
-Consolidada em 2026-10-03 após aprovação do conceito ([04](04-conceito-novo-gantry.md)) e do anel de 440 mm. Itens de estrutura e movimento do novo gantry — a fase Z/eletrônica pode gerar uma segunda lista.
+Consolidada em 2026-10-03 após aprovação dos conceitos ([04](04-conceito-novo-gantry.md), [06](06-conceito-z-voron.md)) e do anel de 440 mm.
+
+> ⚠️ **Correção 2026-10-03**: a versão anterior listava 8× perfil de 440 mm. Um anel de 440×440 com cantoneiras leva **2× 440 + 2× 400** (frente/trás encaixam entre os laterais). Quantidades corrigidas abaixo.
 
 ## Pedido principal
 
 | # | Item | Especificação | Qtde | Uso |
 |---|---|---|---|---|
-| 1 | Perfil alumínio 20×20 T-slot (canal 6) | **440 mm** | **8** | 4× anel XY superior + 4× anel da base |
-| 2 | Perfil alumínio 20×20 T-slot (canal 6) | **400 mm** | **1** | Viga X (ajuste fino por corte conforme CAD) |
+| 1 | Perfil alumínio 20×20 T-slot (canal 6) | **440 mm** | **4** | Laterais dos anéis XY superior e da base (2 por anel) |
+| 2 | Perfil alumínio 20×20 T-slot (canal 6) | **400 mm** | **5** | Frente/trás dos 2 anéis (4) + viga X (1, ajuste fino por corte conforme CAD) |
 | 3 | Correia GT2 largura 6 mm (aberta) | **5 m** | 1 rolo | 2 loops CoreXY (~2,1 m cada) + sobra |
 | 4 | Polia idler GT2 **lisa** 20 dentes equiv., furo 5 mm, p/ correia 6 mm | — | **6** | Desvios onde o **dorso** da correia toca |
 | 5 | Polia idler GT2 **dentada** 20T, furo 5 mm, p/ correia 6 mm | — | **4** | Desvios onde o **lado dentado** toca |
 | 6 | Porca T (martelo) M3, canal 6, perfil 20×20 | — | **60** | Fixação dos 3 trilhos MGN9 (15 furos/trilho, passo 20 mm) + reserva |
 | 7 | Parafuso M3×8 cabeça cilíndrica (allen) | — | **50** | Trilhos MGN9 nos perfis |
 | 8 | Parafuso M3×10/12 + M3 porca | — | **~20** | Carrinhos MGN9 → placas dos carros (conferir comprimento no CAD) |
-| 9 | Parafuso M5×25/30 (eixo das polias idler) | — | **10** | Postes das polias nos blocos impressos |
+| 9 | Parafuso M5×25/30 (eixo das polias idler) | — | **10** | Postes das polias nas juntas XY e blocos de motor |
+
+## Fase Z (conceito [06](06-conceito-z-voron.md))
+
+| # | Item | Especificação | Qtde | Uso |
+|---|---|---|---|---|
+| 10 | Trilho linear **MGN9 × 300 mm com carrinho** | padrão (ex.: MGN9C) | **2** | Guias Z frontais (a traseira usa o 4º trilho do estoque) |
+| 11 | **BLTouch** (original ou clone 3DTouch) | sonda de pino (vidro exige pino; indutiva não serve) | **1** | `G34` (auto-alinhamento dos 2 fusos) + malha `G29`; a TinyBee tem porta 3D-Touch |
+| 12 | Porca T M3 + parafuso M3×8 | adicionais aos do item 6/7 | **+40** | Fixação dos 3 trilhos Z nas colunas |
+| 13 | Acoplador flexível 5×8 mm | se os atuais não forem reaproveitáveis | 0–2 | Motor → fuso TR8 (conferir estoque) |
+| 14 | **Fuso TR8 × 400 mm, passo 8 mm** (TR8×8, 4 entradas) **+ castanha de bronze** | kit fuso+castanha | **2** | Acionamento Z frontal — os TR8 atuais viram reserva |
+| 15 | **Mancal KP08 ou KFL08** (eixo Ø8) | com rolamento | **2** | Apoio dos fusos na base (motor embaixo, estilo Trident) |
+| 16 | **Hotend V6 com bloco Volcano** | ⚠️ versão **12 V** (cartucho 40 W 12 V + termistor) — muitos kits vêm 24 V | **1** | Novo cabeçote; substitui o hotend atual envolto em fita |
 
 ## Conferir no estoque antes de comprar (já devem existir)
 
