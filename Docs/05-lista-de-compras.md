@@ -2,14 +2,14 @@
 
 Consolidada em 2026-10-03 após aprovação dos conceitos ([04](04-conceito-novo-gantry.md), [06](06-conceito-z-voron.md)) e do anel de 440 mm.
 
-> ⚠️ **Correção 2026-10-03**: a versão anterior listava 8× perfil de 440 mm. Um anel de 440×440 com cantoneiras leva **2× 440 + 2× 400** (frente/trás encaixam entre os laterais). Quantidades corrigidas abaixo.
+> ⚠️ **Correção final 2026-10-03** (derivada do esqueleto CAD — [Docs/08](08-esqueleto-maquina.md)): só o **anel superior** usa perfis de 440 nas laterais; os anéis da **base** e do **deck** ficam **entre** as colunas dos cantos, então são todos de 400. Total: **2× 440 + 11× 400**. As colunas são 5× 630 do estoque (4 inteiras + 1 cortada em 440).
 
 ## Pedido principal
 
 | # | Item | Especificação | Qtde | Uso |
 |---|---|---|---|---|
-| 1 | Perfil alumínio 20×20 T-slot (canal 6) | **440 mm** | **4** | Laterais dos anéis XY superior e da base (2 por anel) |
-| 2 | Perfil alumínio 20×20 T-slot (canal 6) | **400 mm** | **5** | Frente/trás dos 2 anéis (4) + viga X (1, ajuste fino por corte conforme CAD) |
+| 1 | Perfil alumínio 20×20 T-slot (canal 6) | **440 mm** | **2** | Laterais do anel XY superior (apoiam sobre as colunas) |
+| 2 | Perfil alumínio 20×20 T-slot (canal 6) | **400 mm** | **11** | Frente/trás do anel superior (2) + anel do deck (4) + anel da base (4) + viga X (1, cortar em 340) |
 | 3 | Correia GT2 largura 6 mm (aberta) | **5 m** | 1 rolo | 2 loops CoreXY (~2,1 m cada) + sobra |
 | 4 | Polia idler GT2 **lisa** 20 dentes equiv., furo 5 mm, p/ correia 6 mm | — | **6** | Desvios onde o **dorso** da correia toca |
 | 5 | Polia idler GT2 **dentada** 20T, furo 5 mm, p/ correia 6 mm | — | **4** | Desvios onde o **lado dentado** toca |

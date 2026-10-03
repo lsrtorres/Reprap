@@ -44,7 +44,8 @@ TOOLHEAD_PLACA_W = 60.0
 TOOLHEAD_PLACA_H = 70.0
 TOOLHEAD_PLACA_T = 4.0
 BICO_OFFSET_Y = -35.0         # offset do bico à frente do centro da viga (estimado)
-BICO_COMPR = 26.0             # altura do marcador do bico
+BICO_COMPR = 39.0             # marcador do bico até a ponta (V6 Volcano: ~55 abaixo da viga)
+BICO_TIP_Z = -55.0            # ponta do bico (z) — mesa em home encosta aqui
 
 # ---- Planos de correia (CoreXY empilhado) ----
 CORREIA_H = 6.0
@@ -73,3 +74,44 @@ MESA_CENTRO_Y = BICO_OFFSET_Y  # mesa centrada no alcance real do bico
 
 # ---- Cursos exigidos ----
 CURSO_REQ = 200.0
+
+# ============================ FRAME VERTICAL / Z ============================
+# Colunas 20x20 nos 4 cantos (perfis de 630 existentes, inteiros) + 1 coluna
+# central traseira (cortada) para o 3o trilho Z (estilo Voron Trident).
+COLUNA_L = 630.0
+Z_TOPO_COLUNA = -PERFIL                      # colunas encostam sob o anel (-20)
+Z_PISO = Z_TOPO_COLUNA - COLUNA_L            # -650
+COL_POS = [(sx * RAIL_Y_X, sy * RAIL_Y_X) for sx in (-1, 1) for sy in (-1, 1)]
+
+# Anel da base (4x perfil 400 entre as colunas, no chão)
+BASE_Z = (Z_PISO, Z_PISO + PERFIL)           # -650 .. -630
+
+# Deck intermediário (4x perfil 400): piso dos mancais/motores do Z;
+# abaixo dele fica a baia da eletrônica (SKIPR, fontes, MOSFET)
+DECK_Z = (-480.0, -460.0)
+BAIA_ALTURA = DECK_Z[0] - BASE_Z[1]          # 150 interno
+
+# Coluna central traseira: do deck ao anel superior (cortar de um 630)
+COL_TRAS_POS = (0.0, RAIL_Y_X)
+COL_TRAS_L = Z_TOPO_COLUNA - DECK_Z[1]       # 440
+
+# Trilhos Z: MGN9x300 verticais — 2 nas colunas frontais (face +Y) e
+# 1 na coluna central traseira (face -Y)
+RAIL_Z_L = 300.0
+RAIL_Z_TOPO = -50.0
+RAIL_Z_BASE = RAIL_Z_TOPO - RAIL_Z_L         # -350
+
+# Fusos TR8x8 x 400 + castanha; mancal KP08/KFL08 sobre o deck; motor na baia
+FUSO_L = 400.0
+FUSO_D = 8.0
+FUSO_Z0 = DECK_Z[1] + 5.0                    # -455 (acima do mancal)
+FUSO_POS = [(-180.0, -195.0), (180.0, -195.0), (0.0, 195.0)]
+CASTANHA_D = 22.0
+CASTANHA_H = 15.0
+
+# Mesa rígida em 3 pontos (SEM molas — z_tilt + bed_mesh substituem):
+# vidro 3 + MK3 3 + espaçador 6 + braço 8
+ESPACADOR_H = 6.0
+BRACO_T = 8.0
+BRACO_TOP_HOME = BICO_TIP_Z - VIDRO_ESP - MESA_ESP - ESPACADOR_H   # -67
+Z_TRAVEL = 200.0

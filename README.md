@@ -39,6 +39,7 @@ New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\projects\c--Reprap\m
 - [05 — Lista de compras](Docs/05-lista-de-compras.md)
 - [06 — Conceito do eixo Z (estilo Voron Trident)](Docs/06-conceito-z-voron.md)
 - [07 — Esqueleto dimensional do gantry](Docs/07-esqueleto-gantry.md)
+- [08 — Esqueleto dimensional da máquina completa](Docs/08-esqueleto-maquina.md)
 
 ## Fluxo de trabalho de CAD
 

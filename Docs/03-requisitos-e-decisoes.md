@@ -45,9 +45,8 @@ Este documento é a memória viva do projeto. Toda decisão relevante entra na t
 
 ## Próximos passos
 
-1. **[Leandro]** Fazer o pedido da [lista de compras](05-lista-de-compras.md) (⚠️ quantidades de perfil corrigidas: 4× 440 + 5× 400)
-2. **[Leandro]** Confirmar a **Opção A** de acionamento do Z (2 fusos frontais + seguidor traseiro — [06](06-conceito-z-voron.md))
-3. **[Leandro]** Abrir `CAD/10-esqueleto-gantry_v1.step` no Fusion 360 e validar o esqueleto ([07](07-esqueleto-gantry.md))
-4. **[Claude]** Estender o esqueleto com colunas, anel da base e o Z Voron (após OK da Opção A)
-5. Modelagem das peças impressas no Fusion 360 (juntas XY com polias encapsuladas, carro do toolhead com ranhuras de correia, blocos de motor)
-6. **[Leandro]** Medições da fase Z/eletrônica ([inventário](01-inventario-componentes.md)) — passo do TR8 é o mais importante
+1. **[Leandro]** Fazer o pedido da [lista de compras](05-lista-de-compras.md) (⚠️ perfis na correção final: **2× 440 + 11× 400**)
+2. **[Leandro]** Confirmar o estoque: **5 perfis de 630** disponíveis? (4 colunas inteiras + 1 p/ cortar)
+3. **[Leandro]** Abrir `CAD/11-esqueleto-maquina_v1.step` no Fusion 360 e validar ([08](08-esqueleto-maquina.md))
+4. Modelagem das peças impressas no Fusion 360, na ordem do [08](08-esqueleto-maquina.md): juntas XY, carro do toolhead (Volcano+BLTouch), blocos de motor, braços da mesa, suportes do deck/baia
+5. **[Leandro]** Pendências leves do inventário: etiqueta dos motores, modelo da extrusora, contagem dos perfis 380
