@@ -1,6 +1,6 @@
 # 01 — Inventário de componentes (a reaproveitar)
 
-Levantamento inicial feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`). Itens marcados com ❓ precisam ser confirmados/medidos na máquina física.
+Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições do Leandro (2026-10-03). Itens marcados com ❓ precisam ser confirmados/medidos na máquina física.
 
 ## Eletrônica
 
@@ -8,8 +8,8 @@ Levantamento inicial feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`). Iten
 |---|---|---|
 | Placa controladora | **MKS TinyBee V1.0** (Makerbase, ESP32 com WiFi, 5 slots de driver) | Confirmado (IMG_0322) |
 | Drivers de passo | Módulos removíveis com dissipador azul — ❓ modelo (A4988 / DRV8825 / TMC2209?) | A confirmar |
-| Fonte 1 | **ST-120-12** — 110/220 V → **12 V 10 A (120 W)**, fab. 2021 | Confirmado (IMG_0322) |
-| Fonte 2 | Fonte chaveada prata maior — ❓ tensão/corrente (etiqueta) | A confirmar (IMG_0321/0322) |
+| Fonte 1 | **ST-120-12** — etiqueta diz **12 V 10 A (120 W)**, fab. 2021; Leandro informou que as fontes são 12 V 30 A — ⚠️ divergência com a etiqueta, re-checar | A re-checar (IMG_0322) |
+| Fonte 2 | Fonte chaveada prata maior — **12 V 30 A (360 W)** (informado pelo Leandro) | Confirmado |
 | MOSFET externo | Módulo preto para mesa aquecida, com borne parafusado | Confirmado (IMG_0321/0322) |
 | Distribuição | Conectores WAGO tipo 221 (5 vias) ×2 | Confirmado (IMG_0321) |
 | Display | Tela em caixa impressa branca no meio da torre — ❓ modelo (MKS TFT? 12864?) | A confirmar (IMG_0317) |
@@ -28,9 +28,10 @@ Levantamento inicial feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`). Iten
 |---|---|---|
 | Gantry XY | Estilo Ultimaker: eixos cruzados com correias GT2 no perímetro, blocos deslizantes impressos | Confirmado (IMG_0320/0325/0326/0328) |
 | Trilho linear | Pelo menos 1 trilho MGN (tampas verdes) usado no gantry — ❓ tamanho (MGN12?) e quantidade | A confirmar (IMG_0320/0326) |
-| Eixos lisos | Barras retificadas — ❓ diâmetro (6 ou 8 mm?) e comprimentos | A confirmar |
-| Fusos Z | 2 fusos verticais (torres esq./dir.), acionados por cima, porca de bronze — ❓ tipo (barra roscada M8 ou trapezoidal TR8?) | A confirmar (IMG_0323/0324/0325) |
-| Guias Z | 2 barras lisas por torre (4 no total) | Confirmado (IMG_0323/0324) |
+| Eixos lisos (gantry) | Barras retificadas **Ø8 mm × 300 mm** | Confirmado (Leandro) — ❓ quantidade total |
+| Eixos lisos (torres Z) | 2 barras por torre (4 no total) — ❓ diâmetro e comprimento | A confirmar |
+| Fusos Z | 2 fusos **trapezoidais TR8** verticais (torres esq./dir.), acionados por cima, porca de bronze — ❓ passo/avanço (TR8×8? ×2?) e comprimento | Confirmado (Leandro) |
+| Curso XY atual | **~180 mm** em X e Y (limite do quadro atual de 380 mm) | Confirmado (Leandro) |
 | Correias | GT2 6 mm com polias e esticadores | Confirmado (IMG_0320/0328) |
 | Esteira porta-cabos | Esteira impressa branca para o cabeçote | Confirmado (IMG_0318/0328) |
 
@@ -46,27 +47,26 @@ Levantamento inicial feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`). Iten
 | Item | Identificação | Status |
 |---|---|---|
 | Superfície | Vidro com clipes | Confirmado (IMG_0317) |
-| Mesa aquecida | ❓ existe PCB aquecedor sob o vidro? Modelo/tamanho (MK2b 214×214?) e tensão (12 V?) | A confirmar |
+| Mesa aquecida | **MK3 de alumínio, 220 × 220 mm**, alimentação 12 V, conector de bloco + LED indicador | Confirmado (Mesa.heic + Leandro) |
 | Suporte | Plataforma impressa branca com molas de nivelamento (4 pontos) | Confirmado (IMG_0317/0325) |
 
 ## Estrutura
 
 | Item | Identificação | Status |
 |---|---|---|
-| Perfis de alumínio | ❓ série (20×20? há peças que parecem 20×40) — comprimentos disponíveis: **380 mm** e **630 mm** | A confirmar |
+| Perfis de alumínio | **20×20 mm**, ranhura p/ porca T M5 — comprimentos disponíveis: **380 mm** e **630 mm**; compra de perfis adicionais aprovada | Confirmado (Leandro) |
 | Fixação | Cantoneiras/placas impressas externas, parafusos M5 + porca T | Confirmado (IMG_0317/0318) |
 | Painéis | Chapas perfuradas brancas na base (compartimento da eletrônica) | Confirmado (IMG_0321/0322) |
 
 ## Medições pendentes (fazer na máquina)
 
-1. Etiqueta da fonte 2 (tensão/corrente)
+1. ⚠️ Re-checar etiqueta da fonte ST-120-12 (etiqueta diz 10 A; informado 30 A) — se forem 2× 360 W, ótimo; se uma for 120 W, a divisão de cargas muda
 2. Modelo dos drivers de passo (tirar um do slot e fotografar)
 3. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
-4. Diâmetro das barras lisas (paquímetro: 6 vs 8 mm) e comprimentos
-5. Fusos Z: diâmetro, passo e tipo de rosca (M8 ×1,25 vs TR8×8?)
-6. Perfil de alumínio: medir seção (20×20?) e ranhura (canal ~6 mm?)
-7. Mesa: dimensões do vidro, existência e modelo do aquecedor, tensão
-8. Trilho(s) MGN: largura do trilho e comprimento; quantos existem
-9. Curso XY e Z atuais da máquina
-10. Modelo do display
-11. Modelo do hotend e da extrusora
+4. Trilho(s) MGN: largura (12 mm?), comprimento e **quantos existem**
+5. Quantidade total de barras lisas Ø8×300 disponíveis no gantry atual
+6. Barras lisas das torres Z: diâmetro e comprimento
+7. Fusos TR8: passo/avanço (ponta: medir o deslocamento em 1 volta — 2 mm ou 8 mm) e comprimento
+8. Curso Z atual
+9. Modelo do display
+10. Modelo do hotend e da extrusora

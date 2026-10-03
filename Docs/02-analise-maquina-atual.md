@@ -33,7 +33,8 @@ Impressora de pórtico superior **estilo Ultimaker**:
 
 ## Implicações para o redesenho 200×200×200
 
-- O gantry estilo Ultimaker exige largura interna ≈ curso + blocos deslizantes + folgas. Com perfis de **380 mm** o vão interno fica ~340 mm (perfil 20×20), o que é **apertado porém factível** para 200 mm de curso (o Ultimaker Original tinha ~342 mm externo para 210 de curso, mas com painéis de madeira finos, não perfis + cantoneiras externas).
-- Decisão chave pendente: **manter os perfis de 380 mm** e otimizar os blocos do gantry, ou **comprar perfis um pouco maiores** (ex.: 420–450 mm) para folga de projeto.
+- **O quadro atual não entrega 200 mm**: perfis de 380 mm (20×20) dão vão interno de ~340 mm, e o curso real medido é **~180 mm** — os blocos deslizantes e o carro central do gantry Ultimaker consomem ~160 mm de vão. Para 200 mm de curso será preciso **comprar perfis maiores para o anel XY** e/ou mudar para uma cinemática que consuma menos vão (CoreXY).
+- O Leandro quer **mudar o roteamento das correias** (como chegam ao toolhead e ao próprio gantry) — ver [04-conceito-novo-gantry.md](04-conceito-novo-gantry.md).
 - Curso Z de 200 mm é tranquilo com as torres atuais (perfis de 630 mm dão espaço de sobra para fuso + mesa + base).
+- Mesa MK3 220×220 comporta os 200×200 úteis com margem de 10 mm por lado.
 - A caixa de eletrônica na base pode ser mantida conceitualmente igual, só redimensionada.
