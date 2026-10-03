@@ -38,7 +38,20 @@ Manter cinemática e só limpar o roteamento. Não resolve a insatisfação (as 
 ## Arquitetura das guias (decidida 2026-10-03)
 
 - **Y (2×)**: barras **Ø8×400 existentes**, uma em cada lateral, com rolamentos LM8UU nos carros Y (blocos impressos)
-- **X (viga)**: **perfil 20×20 + trilho MGN (~300 mm) montado sobre ele** — pedido do Leandro: o perfil dá rigidez à viga, o trilho guia o toolhead. O carro do toolhead parafusa no carrinho do MGN; as correias ancoram nele
+- **X (viga)**: **perfil 20×20 + trilho MGN (~300 mm) montado na face frontal** (estilo Voron/RatRig) — o perfil dá rigidez à viga, o trilho guia o toolhead. Montagem frontal (e não no topo) porque: placa do toolhead fica plana e parafusa direto no carrinho (sem "L" contornando a viga), o trilho fica mais perto do centro de massa do cabeçote (menos momento nas acelerações) e o topo da viga fica livre para esteira porta-cabos e endstop. Trilho fixado com parafusos M3 + porcas T no canal do perfil. As correias ancoram no carro do toolhead
+
+```
+             topo livre (esteira)
+            ┌──────────┐
+   carrinho │  perfil  │
+   MGN  ┌─┐ │  20×20   │
+  ══════│█│▌│          │
+ trilho └─┘ │          │
+        │   └──────────┘
+  placa │
+  plana ├── extrusora/hotend (CG perto do trilho)
+        │
+```
 
 ## Dimensional (CoreXY, curso 200×200, números reais)
 
