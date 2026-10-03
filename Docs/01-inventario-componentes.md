@@ -7,7 +7,7 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 | Item | Identificação | Status |
 |---|---|---|
 | Placa controladora | **MKS TinyBee V1.0** (Makerbase, ESP32 com WiFi, 5 slots de driver) — será substituída pela **MKS Monster8 V2** (8 slots) e vira reserva ([decisão](03-requisitos-e-decisoes.md)) | Confirmado (IMG_0322) |
-| Drivers de passo | Módulos removíveis com dissipador azul — ❓ modelo (A4988 / DRV8825 / TMC2209?) | A confirmar |
+| Drivers de passo | **5× TMC2209** (removíveis, dissipador azul) — no Klipper rodarão em modo UART | Confirmado (Leandro) |
 | Fonte 1 | **ST-120-12** — **12 V 10 A (120 W)**, fab. 2021 | Confirmado (IMG_0322 + Leandro) |
 | Fonte 2 | Fonte chaveada prata maior — **12 V 30 A (360 W)** | Confirmado (Leandro) |
 | MOSFET externo | Módulo preto para mesa aquecida, com borne parafusado | Confirmado (IMG_0321/0322) |
@@ -61,7 +61,7 @@ Levantamento feito a partir das fotos de 2026-10-03 (`Fotos/jpg/`) + medições 
 
 Nenhuma pendência bloqueia o gantry XY. As restantes são para as fases Z e eletrônica:
 
-1. Modelo dos drivers de passo (tirar um do slot e fotografar)
-2. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
-3. Modelo do display
-4. Modelo da extrusora vermelha (o hotend será substituído por V6 Volcano — [decisão](03-requisitos-e-decisoes.md); fusos TR8 atuais viram reserva, substituídos por TR8×8 novos)
+1. Modelo/corrente dos motores NEMA 17 (etiqueta lateral)
+2. Modelo do display
+3. Modelo da extrusora vermelha (o hotend será substituído por V6 Volcano — [decisão](03-requisitos-e-decisoes.md); fusos TR8 atuais viram reserva, substituídos por TR8×8 novos)
+4. Quantos perfis de **630 mm** e de **380 mm** existem no estoque (o esqueleto da máquina usa 5× 630 como colunas)

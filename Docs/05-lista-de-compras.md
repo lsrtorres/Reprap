@@ -31,7 +31,7 @@ Consolidada em 2026-10-03 após aprovação dos conceitos ([04](04-conceito-novo
 | 16 | **Hotend V6 com bloco Volcano** | ⚠️ versão **12 V** (cartucho 40 W 12 V + termistor) — muitos kits vêm 24 V | **1** | Novo cabeçote; substitui o hotend atual envolto em fita |
 | 17 | **Placa MKS SKIPR** | SoC quad-core (Klipper host **embutido**) + MCU STM32, 7 slots de driver, 12–24 V; conferir se o kit inclui dongle WiFi USB (senão, usar Ethernet) + cartão microSD ≥16 GB p/ a imagem | **1** | Substitui a TinyBee (vira reserva); host + MCU numa placa só |
 | 18 | **Motor NEMA17** | similar aos atuais (~40 mm, 1,5–1,7 A; confirmar etiqueta dos existentes) | **1** | 3º fuso Z |
-| 19 | **Driver de passo** | 1× igual aos 5 atuais (identificar modelo — pendência do inventário); Klipper aceita qualquer step/dir | **1** | 6º slot da SKIPR; upgrade opcional futuro: TMC2209 UART |
+| 19 | **Driver TMC2209** | igual aos 5 atuais (confirmado: a máquina já usa TMC2209) — modo UART no Klipper | **1** | 6º slot da SKIPR |
 | 20 | Acelerômetro **ADXL345** (opcional) | com cabo (a SKIPR tem porta SPI p/ ele) | 0–1 | Calibração do input shaper — onde o Klipper brilha no CoreXY |
 
 ## Conferir no estoque antes de comprar (já devem existir)

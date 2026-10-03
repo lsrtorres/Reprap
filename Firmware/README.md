@@ -15,6 +15,7 @@ Esta pasta vai receber o **`printer.cfg`** (versionado — toda mudança de conf
 | `[probe]`/`[bltouch]` | BLTouch | lista de compras item 11 |
 | `[z_tilt]` | 3 pontos (2 frontais + 1 central traseiro) — coordenadas sairão do CAD | [Docs/06](../Docs/06-conceito-z-voron.md) |
 | `[bed_mesh]` | janela 200×200 centrada em (0, −35) do sistema do anel — mapear p/ coords da mesa | [Docs/07](../Docs/07-esqueleto-gantry.md) |
+| Drivers | 6× **TMC2209 em UART** (`[tmc2209 stepper_*]`, `run_current` a definir pela etiqueta dos motores); sensorless homing = opção futura | inventário (5 existentes + 1 a comprar) |
 | Mesa | MK3 12 V via MOSFET externo, termistor 100k | inventário |
 | Hotend | V6 Volcano 12 V, 40 W | lista de compras item 16 |
 | Extrusora | direct-drive vermelha atual — `rotation_distance` a calibrar | inventário (modelo pendente) |
